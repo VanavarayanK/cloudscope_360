@@ -8,7 +8,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
         rel="stylesheet">
-        
+
     <link rel="stylesheet" href="style.css">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <div class="landingPage">
+    <section class="landingPage">
 
         <div class="header">
             <div>
@@ -62,43 +62,48 @@
                     Book a demo
                 </button>
             </div>
-            <img src="./landing.svg" width="600" alt="" />
+            <div class="landingImage">
+                <img src="./landing.svg" width="600" alt="" />
+            </div>
         </div>
-    </div>
-    <div class="aboutpage">
-        <p class="pageDescription">
+    </section>
+    <section class="aboutpage">
+        <p class="pageDescription  hidden">
             Work more efficiently with CloudScope Server and
             <br /> be in control with ease of your environment.
         </p>
-        <img style="margin-top:30px"  src="./home-hero 1.svg" alt="" />
-    </div>
-    <div class="featuredPage" id="features" style="padding-top: 70px;">
-        <div class="featuresCard">
-            <div style="display: flex;flex-direction: column; justify-content: space-evenly;">
+        <div class="hidden  hiddenZoom">
 
-                <p class="pageDescription" style="text-align: left;">
+            <img style="margin-top:30px;" src="./home-hero 1.svg" alt="" />
+        </div>
+    </section>
+    <section class="featuredPage" id="features" style="padding-top: 70px;">
+        <div class="featuresCard">
+            <div class="featureContent">
+
+                <p class="pageDescription hidden" style="text-align: left;">
                     A tailor-made Monitoring Solution
                     <br />for your multiple server
                 </p>
                 <div style="padding-left: 30px">
-                    <p class="featureText">
+                    <p class="featureText hidden">
                         Lorem ipsum dolor sit amet
                     </p>
-                    <p class="featureText">
+                    <p class="featureText hidden">
                         Consectetur adipiscing elit
                     </p>
-                    <p class="featureText">
+                    <p class="featureText hidden">
                         Aenean sodales dictum viverra.
                     </p>
-                    <p class="featureText">
+                    <p class="featureText hidden">
                         Nam gravida dignissim eros
                     </p>
-                    <p class="featureText">
+                    <p class="featureText hidden">
                         Vivamus congue erat ante
                     </p>
                 </div>
-                <div style="display: flex; column-gap: 50px; ">
-                    <button class="btn" style="width:250px">
+                <div class="hidden" style="display: flex; column-gap: 50px; ">
+                    <button class="btn " style="width:250px">
                         Book a demo
                     </button>
                     <button class="btnOutlined" style="width:250px">
@@ -107,13 +112,13 @@
                 </div>
             </div>
 
-            <div style="display: flex; column-gap: 40px;">
-                <div class="features" style="padding-top: 100px;">
-                    <div class="box">
+            <div class="featuredCard">
+                <div class="features hidden" style="padding-top: 100px;">
+                    <div class="box hidden">
                         <img src="./testimonial 1.png" alt="" />
                         <p class="featuresTitle">Websites</p>
                     </div>
-                    <div class="box1">
+                    <div class="box1 hidden" style="margin-top: 2rem;">
                         <img src="./alert.png" alt="" />
                         <p class="featuresTitle">Alert
                             <br />
@@ -122,14 +127,14 @@
                     </div>
 
 
-                </div>
-                <div class="features">
+                </div> 
+                <div class="features ">
 
-                    <div class="box1">
+                    <div class="box1 hidden">
                         <img src="./cloud.png" alt="" />
                         <p class="featuresTitle">Cloud<br /> Instances</p>
                     </div>
-                    <div class="box">
+                    <div class="box hidden">
                         <img src="./servers.png" alt="" />
                         <p class="featuresTitle">Servers</p>
                     </div>
@@ -137,27 +142,27 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     <section class="servicesPage" id="solution" style="padding-top: 40px;">
-        <div class="aboutpage">
-            <p class="pageDescription" style="text-align: center;">
+        <div class="">
+            <p class="pageDescription hidden" style="text-align: center;">
                 What our platform do ?
             </p>
-            <div class="servicesFirstRow">
-                <div class="card hidden">
+            <div class="servicesFirstRow hidden">
+                <div class="card">
                     <img src="./graphic 1.png" alt="" />
                     <p class="serviceDescription">Uptime <br /> Monitoring</p>
                 </div>
-                <div class="card hidden">
+                <div class="card">
                     <img src="./Cloudscope360/security.png" alt="" />
                     <p class="serviceDescription">Performance<br /> Monitoring</p>
                 </div>
-                <div class="card hidden">
+                <div class="card">
                     <img src="./Cloudscope360/performance.png" alt="" />
                     <p class="serviceDescription">Security <br /> Monitoring</p>
                 </div>
             </div>
-            <div class="servicesSecondRow">
+            <div class="servicesSecondRow hidden">
                 <div class="card1">
                     <img src="./Cloudscope360/resource.png" alt="" />
                     <p class="serviceDescription">Resource <br /> Monitoring</p>
@@ -175,7 +180,7 @@
                     <p class="serviceDescription">System<br /> Metrics</p>
                 </div>
             </div>
-            <div class="servicesFirstRow">
+            <div class="servicesFirstRow hidden">
                 <div class="card">
                     <img src="./Cloudscope360/service.png" alt="" />
                     <p class="serviceDescription">Service <br />Monitoring</p>
@@ -185,14 +190,14 @@
                     <p class="serviceDescription">Logs <br /> Monitoring</p>
                 </div>
                 <div class="card">
-                    <img src="./alert.png" alt=""  width="100"/>
+                    <img src="./alert.png" alt="" width="100" />
                     <p class="serviceDescription">Alert <br /> Monitoring</p>
                 </div>
             </div>
         </div>
     </section>
-    <div class="benefitsPage" id="benefits" style="padding-top: 40px;">
-        <div class="benefits">
+    <section class="benefitsPage" id="benefits" style="padding-top: 40px;">
+        <div class="benefits hidden">
             <Button class="benefitAction">
                 Website
             </Button>
@@ -206,81 +211,63 @@
                 Alert Monitor
             </Button>
         </div>
-        <div style="display:flex;justify-content: space-between;">
-            <div style="margin-left: 70px;margin-top: 50px;">
-                <p class="benefitsTitle">Uptime Monitoring</p>
-                <p class="benefitsDescription">Continuously monitor the availability and response time of your websites
+        <div class="benefitsContent hidden">
+            <div style=" padding: 50px;">
+                <p class="benefitsTitle hidden">Uptime Monitoring</p>
+                <p class="benefitsDescription hidden">Continuously monitor the availability and response time of your websites
                     from various locations.</p>
-                <p class="benefitsTitle">Uptime Monitoring</p>
-                <p class="benefitsDescription">Continuously monitor the availability and response time of your websites
+                <p class="benefitsTitle hidden">Uptime Monitoring</p>
+                <p class="benefitsDescription hidden">Continuously monitor the availability and response time of your websites
                     from various locations.</p>
-                <p class="benefitsTitle">Uptime Monitoring</p>
-                <p class="benefitsDescription">Continuously monitor the availability and response time of your websites
+                <p class="benefitsTitle hidden">Uptime Monitoring</p>
+                <p class="benefitsDescription hidden">Continuously monitor the availability and response time of your websites
                     from various locations.</p>
-                <p class="benefitsTitle">Uptime Monitoring</p>
-                <p class="benefitsDescription">Continuously monitor the availability and response time of your websites
+                <p class="benefitsTitle hidden">Uptime Monitoring</p>
+                <p class="benefitsDescription hidden">Continuously monitor the availability and response time of your websites
                     from various locations.</p>
             </div>
-            <img width="50%" style="margin-top: 50px;" src="./Group 1321315667.png" alt="" />
+            <div class="benefitsImage hidden">
+                <img style="margin-top: 50px; width: 800px;" src="./Group 1321315667.png" alt="" />
+            </div>
         </div>
-    </div>
-    <div class="contactPage" id="contact" style="padding-top: 20px;">
-        <div class="contactInfo">
+    </section>
+    <section class="contactPage" id="contact" style="padding-top: 20px;">
+        <div class="contactInfo hidden">
             <img src="./Cloudscope360/hand.png" width='100' alt="" />
-            <p class="contactTitle">Get in touch with us</p>
-            <p class="contactDescription">
+            <p class="contactTitle hidden">Get in touch with us</p>
+            <p class="contactDescription hidden">
                 We will try and understand your system architecture & discuss details of what it will take for you to
                 get 100% compliant.
             </p>
         </div>
-        <div class="contactForm">
-            <p class="contactLabel">Name</p>
-            <input
-            placeholder="Name"
-            class="input"
-            />
+        <div class="contactForm hidden">
+            <p class="contactLabel hidden">Name</p>
+            <input class="hidden" placeholder="Name" class="input" />
             <div style="display: flex; gap:30px">
-                <div >
-                    <p class="contactLabel">Country Code</p>
-                    <input
-                    style=" width:100px;"
-                    placeholder="+91"
-                    class="input"
-                    />
+                <div>
+                    <p class="contactLabel hidden">Country Code</p>
+                    <input  class="hidden" style=" width:100px;" placeholder="+91" class="input" />
                 </div>
-                <div >
-                    <p class="contactLabel">Phone number</p>
-                    <input
-                    style=" width:290px;"
-                    placeholder="Phone Number"
-                    type="number"
-                    class="input"
-                    />
+                <div>
+                    <p class="contactLabel hidden">Phone number</p>
+                    <input  class="hidden" style=" width:290px;" placeholder="Phone Number" type="number" class="input" />
                 </div>
             </div>
-            <p class="contactLabel">Email</p>
-            <input
-            placeholder="Email"
-            class="input"
-            />
-            <p class="contactLabel">Message</p>
-            <textarea
-            placeholder="Message"
-            class="input"
-            multiple
-            rows="4" 
-            ></textarea>    
-            <button class="btn" style="width: 100%;margin: 2rem 0;">
+            <p class="contactLabel hidden">Email</p>
+            <input  class="hidden" placeholder="Email" class="input" />
+            <p class="contactLabel hidden">Message</p>
+            <textarea  class="hidden" placeholder="Message" class="input" multiple rows="4"></textarea>
+            <button class="btn hidden" style="width: 100%;margin: 2rem 0;">
                 Book a demo
             </button>
         </div>
-    </div>
-    <div class="footerPage" id="footer" style="padding-top: 40px;">
+    </section>
+    <section class="footerPage" id="footer" style="padding-top: 40px;">
         <div class="footerItems">
-            <div class="footerColumn" style="  width: 35%;        ">
+            <div class="footerColumn hidden" style="  width: 35%;        ">
                 <img src="./Cloudscope360/footerLogo.png" alt="" />
             </div>
-            <div class="footerColumn">
+            <div class="footerColumn hidden">
                 <div>
                     <p class="footerContent">Features</p>
                     <p class="footerContent">Solution</p>
@@ -289,15 +276,15 @@
 
                 </div>
             </div>
-            <div class="footerColumn">
-                <p class="footerContent">Privacy Policy</p>
-                <p class="footerContent">Terms & Conditions</p>
-                <p class="footerContent">Help & Support</p>
+            <div class="footerColumn hidden">
+                <p class="footerContent ">Privacy Policy</p>
+                <p class="footerContent ">Terms & Conditions</p>
+                <p class="footerContent ">Help & Support</p>
 
             </div>
-            <div class="footerColumn" style="  width: 25%;">
-                <p class="footerContent" style="font-weight: 600;margin: 10px 0;"> Cloudvalley Technologies (FZC),</p>
-                <p class="footerContent"> B 402, Tower B, Executive Tower,
+            <div class="footerColumn hidden" style="  width: 25%;">
+                <p class="footerContent " style="font-weight: 600;margin: 10px 0;"> Cloudvalley Technologies (FZC),</p>
+                <p class="footerContent "> B 402, Tower B, Executive Tower,
                     <br />
                     Business Bay, Dubai, UAE,
                     <br />
@@ -312,17 +299,32 @@
         </div>
         <div class="socialMedia">
             <div style="display: flex;align-items: center;gap:10px">
-                <p class="footerContent" >Follow us</p>
-                <img width="38" height="38" style="cursor: pointer;" src="./Cloudscope360/linkedin-svgrepo-com 1.png" alt="linkedin"/>
-                <img width="38" height="38" style="cursor: pointer;" src="./Cloudscope360/instagram-svgrepo-com 1.png" alt="insta"/>
-                <img width="30" height="30" style="cursor: pointer;" src="./Cloudscope360/facebook-svgrepo-com 1.png" alt="facebook"/>
+                <p class="footerContent">Follow us</p>
+                <img width="38" height="38" style="cursor: pointer;" src="./Cloudscope360/linkedin-svgrepo-com 1.png"
+                    alt="linkedin" />
+                <img width="38" height="38" style="cursor: pointer;" src="./Cloudscope360/instagram-svgrepo-com 1.png"
+                    alt="insta" />
+                <img width="30" height="30" style="cursor: pointer;" src="./Cloudscope360/facebook-svgrepo-com 1.png"
+                    alt="facebook" />
             </div>
 
-            <p class="footerContent" >Cloudvalley Technologies <img  src="./Cloudscope360/footerC.svg" alt="" />2024</p>
+            <p class="footerContent">Cloudvalley Technologies <img src="./Cloudscope360/footerC.svg" alt="" />2024</p>
         </div>
 
-    </div>
+    </section>
+    <!-- const observer = new IntersectionObserver((entries)=>{
+        entries.forEach((entry)=>{
+            console.log(entry)
+            if(entry.isIntersecting){
+                entry.target.classList.add('show')
+            }else{
+                entry.target.classList.remove('show')
+            }
+        })
+    })
 
+    const hiddenElements = document.querySelectorAll('.hidden')
+    hiddenElements.forEach((el)=> observer.observe(el)) -->
 
     </div>
     <script>
@@ -331,19 +333,39 @@
             element.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
         }
 
-        const observer = new IntersectionObserver((entries)=>{
-            entries.forEach((entry)=>{
-                console.log(entry)
-                if(entry.isIntersecting){
-                    entry.target.classList.add('show')
-                }else{
-                    entry.target.classList.remove('show')
-                }
-            })
-        })
+        document.addEventListener("DOMContentLoaded", function () {
+            var sections = document.querySelectorAll(".hidden");
+            var zoomSection = document.querySelectorAll(".hiddenZoom");
 
-        const hiddenElements = document.querySelectorAll('.hidden')
-        hiddenElements.forEach((el)=> observer.observe(el))
+
+            function checkScroll() {
+                sections.forEach(function (section) {
+                    var sectionPosition = section.getBoundingClientRect().top;
+                    var screenPosition = window.innerHeight / 1.3; // Adjust the division factor for when you want the animation to start
+
+                    if (sectionPosition < screenPosition) {
+                        section.classList.add("show");
+                    } else {
+                        section.classList.remove("show");
+                    }
+                });
+                zoomSection.forEach(function (section) {
+                    var sectionPosition = section.getBoundingClientRect().top;
+                    var screenPosition = window.innerHeight / 1.2; // Adjust the division factor for when you want the animation to start
+
+                    if (sectionPosition < screenPosition) {
+                        section.classList.add("showZoom");
+                    } else {
+                        section.classList.remove("showZoom");
+                    }
+                });
+            }
+
+            checkScroll();
+            window.addEventListener("scroll", checkScroll);
+        });
+
+
     </script>
 </body>
 
