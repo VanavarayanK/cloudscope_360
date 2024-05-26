@@ -420,8 +420,36 @@ body {
     text-align: left;
     color: #111111;
     padding-left: 70px;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 0;
+    width: 100%;
+    animation: typing 1s steps(25), blink 1s step-end infinite alternate;
+  }
+
+  .title1{
+    font-family: DM Sans;
+    font-size: 76px;
+    font-weight: 700;
+    line-height: 98.95px;
+    text-align: left;
+    color: #111111;
+    padding-left: 70px;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 0;
+    width: 100%;
+    animation: typing 1.5s steps(25), blink 5s step-end infinite alternate;
 
   }
+
+  /* .title::after{
+    content:"";
+    position: absolute;
+    height: 90px;
+    width: 10px;
+    background: #000000;
+  } */
 
   .actions {
     column-gap: 30px;
@@ -670,5 +698,17 @@ body {
   to {
     transform: scale(1);
 
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: black
   }
 }
